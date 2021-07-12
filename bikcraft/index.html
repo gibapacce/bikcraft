@@ -3,12 +3,22 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bikcraft</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/grid.css">
+	<!-- Title Até 70 caracteres -->
+	<title>Bikcraft - Bicicletas Personalizadas</title>
+	<!-- Description Até 140 caracteres -->
+	<meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos, Passeio, Retrô e Esporte.">
+	<!--OPEN GRAPHS-->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas" />
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos, Passeio, Retrô e Esporte." />
+	<meta property="og:url" content="http://bikcraft.com" />
+	<meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
+	<!--ESCALA COM TAMANHO DO DISPOSITIVO - RESPONSIVO-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FAVICON-->
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsivo.css">
+	<script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -31,16 +41,16 @@
 
 	<section class="introducao">
 		<div class="container">
-			<h1>Bicicletas Feitas a Mão</h1>
-			<blockquote class="quote-externo">
+			<h1 data-anime="400">Bicicletas Feitas a Mão</h1>
+			<blockquote data-anime="800" class="quote-externo fadeInDown">
 				<p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
 				<cite>WILLIAM MORRIS</cite>
 			</blockquote>
-			<a href="produtos.html" class="btn">Orçamento</a>
+			<a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
 		</div>
 	</section>
 
-	<section class="produtos container">
+	<section class="produtos container fadeInDown" data-anime="1600">
 		<h2 class="subtitulo">Produtos</h2>
 		<ul class="produtos_lista">
 
@@ -79,7 +89,7 @@
 	<!-- Fecha Produtos -->
 
 	<section class="portfolio">
-		<div class="container">
+		<div class="container fadeInDown" data-anime="1600">
 			<h2 class="subtitulo">Portfólio</h2>
 			<ul class="portfolio_lista">
 				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
@@ -93,7 +103,7 @@
 		</div>
 	</section>
 
-	<section class="qualidade container">
+	<section class="qualidade container fadeInDown" data-anime="2000">
 		<h2 class="subtitulo">Qualidade</h2>
 		<img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
 		<ul class="qualidade_lista">
@@ -116,12 +126,12 @@
 		</div>
 	</section>
 
-	<section class="quebra">
+	<div class="quebra">
 		<blockquote class="quote-externo container">
 			<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
 			<cite>WILLIAM MORRIS</cite>
 		</blockquote>
-	</section>
+	</div>
 
 	<footer>
 		<div class="footer">
@@ -144,9 +154,9 @@
 				<div class="grid-4 footer_redes">
 					<h3>Contato</h3>
 					<ul>
-						<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a></li>
-						<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
-						<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a></li>
+						<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Icon"></a></li>
+						<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Icon"></a></li>
+						<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Icon"></a></li>
 					</ul>
 				</div>
 
@@ -159,6 +169,11 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- JavaScript -->
+	<script src="./js/simple-anime.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- JavaScript -->
 
 </body>
 
