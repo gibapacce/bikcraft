@@ -46,6 +46,11 @@
   font-family: Georgia, "Times New Roman", serif;
 }
 
+.contato_form input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
 .contato_form button {
   padding: 7px 40px;
   background: none;
